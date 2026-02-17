@@ -33,6 +33,7 @@ use Glpi\Exception\SessionExpiredException;
 
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
+ini_set('session.cookie_samesite', 'Lax');
 error_reporting(E_ALL);
 
 include('../../../inc/includes.php');
